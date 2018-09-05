@@ -3,9 +3,9 @@ import sympy as sym
 # Here we find the derivative of the survival function used in the
 # article in order to obtain the probability density function
 
-t, a, beta, x, lamb, mu = sym.symbols('t a beta x lambda mu')
+t, rho, p, x, lamb, mu = sym.symbols('t rho p x lambda mu')
 
-p1 = sym.exp(a+beta*x)
+p1 = rho * p
 
 p2 = sym.exp(-lamb * t) * sym.exp(-mu * t)
 
